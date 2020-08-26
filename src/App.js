@@ -190,7 +190,6 @@ function App() {
 			<button onClick={showInstructions}>instructions</button>
 			<p>{cocktailInstructions}</p>
 			<h1>2.</h1>
-			<p> answer goes here </p>
 			<span>{everyThirdIndexRemoved}</span>
 		</div>
 	);
