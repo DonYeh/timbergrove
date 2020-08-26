@@ -4,9 +4,7 @@ import axios from "axios";
 function App() {
 	const [cocktails, setCocktails] = useState([]);
 	const [value, setValue] = React.useState();
-	const [cocktailInstructions, setCocktailInstructions] = useState(
-		"cocktail instructions go here"
-	);
+	const [cocktailInstructions, setCocktailInstructions] = useState();
 	
 	
 	const thisArray = [
