@@ -159,16 +159,9 @@ function App() {
 	}, []);
 
 	const showInstructions = () => {
-		//list out cocktail instructions here
-		console.log("inside showInstructions");
-		console.log(value);
-		console.log(cocktails);
 		let selectedDrink = cocktails.filter(
 			(cocktail) => cocktail.strDrink === value
 		);
-		// let drinkInstructions = selectedDrink.data.strInstructions;
-		// return <p>{drinkInstructions}</p>;
-		console.log(selectedDrink[0].strInstructions);
 		setCocktailInstructions(selectedDrink[0].strInstructions);
 	};
 
@@ -181,7 +174,6 @@ function App() {
 				id="drinks"
 				onChange={(e) => {
 					setValue(e.currentTarget.value);
-					// let cocktailID = e.currentTarget.value;
 					let instructions = cocktails.filter(
 						(cocktail) => cocktail.idDrink === e.currentTarget.value
 					);
