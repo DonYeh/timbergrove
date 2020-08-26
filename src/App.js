@@ -75,7 +75,6 @@ function App() {
 					let instructions = cocktails.filter(
 						(cocktail) => cocktail.idDrink === e.currentTarget.value
 					);
-					console.log(instructions);
 					setCocktailInstructions(instructions);
 				}}
 			>
